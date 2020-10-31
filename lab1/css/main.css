@@ -193,8 +193,13 @@
     color: pink;
 }
 
+.card-img {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 .reg {
-    background: url(http://localhost:63342/web_site/img/571c75cb838af154472c2313.jpg);
+    background: url(https://cdn.pixabay.com/photo/2016/11/15/02/08/cupcakes-1825136_1280.jpg);
 }
 
 
