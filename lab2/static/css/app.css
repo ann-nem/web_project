@@ -1,0 +1,198 @@
+.btn {
+    color: hotpink;
+    border-color: hotpink;
+}
+
+.btn:hover {
+    background-color: deeppink;
+    border-color: hotpink;
+    color: white
+}
+
+.carousel slide {
+    margin-top: 66px
+}
+
+.btn-primary {
+    background-color: lightpink;
+    color: dimgray;
+    border-color: dimgray;
+}
+
+.nav-link {
+    color: deeppink;
+}
+
+.jumbotron {
+    background-color: lightpink;
+}
+
+
+.card-deck {
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.page {
+    background-color: white;
+}
+
+.carousel-inner {
+    height: 450px;
+}
+
+.text-muted {
+    text-decoration: none;
+    color: red;
+}
+
+.page-product {
+    background-color: lightpink;
+}
+
+.product-title {
+    color: #3b3434;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.media {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.media-body {
+    margin-left: 20px;
+}
+
+.product-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.media {
+    margin-left: 20px;
+    margin-right: 300px;
+    border: 2px solid black;
+}
+
+.card {
+    background-color: lightpink;
+}
+
+.info-product {
+    margin-left: 40px;
+    margin-right: 178px;
+    background-color: white;
+}
+
+.card-auto {
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-header {
+    color: deeppink;
+}
+
+.img-center {
+    margin-left: 518px;
+}
+
+.card-title {
+    margin-top: 20px;
+}
+
+.btn-in {
+    color: white;
+    background-color: dimgray;
+}
+
+.text-reg {
+    margin-top: -30px;
+    margin-left: 1000px;
+}
+
+.card-reg {
+    margin-bottom: 25px;
+}
+
+.btn:active {
+    color: white;
+    background-color: lightpink;
+}
+
+.footer {
+    background-color: #fff7f8;
+    margin-top: -16px;
+    height: 60px;
+}
+
+.product-link {
+    color: white;
+}
+
+.product-link:hover {
+    color: dimgray;
+    text-decoration: none;
+}
+
+.info-product {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    text-align: left;
+}
+
+.product-card {
+    margin-left: 80px;
+    margin-top: 40px;
+    padding-right: 40px;
+    margin-right: 47px;
+    background-color: white;
+}
+
+.tab-content {
+    margin-right: 40px;
+    margin-left: -150px;
+    margin-top: -30px;
+}
+
+.info-product {
+    margin-left: 80px;
+    margin-top: -15px;
+    width: 1113px;
+}
+
+.nav-pills {
+    margin-top: 10px;
+}
+
+.nav-link-vid {
+    color: black;
+    background-color: white;
+    border: solid dimgray 1px;
+    width: 300px;
+}
+
+.nav-link-vid:active{
+    color: white;
+    background-color: deeppink;
+}
+
+.nav-link-vid:hover{
+    color: pink;
+}
+
+.reg {
+    background: url(http://localhost:63342/web_site/img/571c75cb838af154472c2313.jpg);
+}
