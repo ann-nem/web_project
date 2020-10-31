@@ -1,5 +1,6 @@
 <template>
-  <div class="container sign-in">
+  <div class="back-page">
+  <div class="container">
     <div class="card card-auto">
       <div class="card-header text-center"> Авторизация </div>
       <div class="card-body">
@@ -23,6 +24,7 @@
           <button type="submit" class="btn btn-primary btn-in">Войти</button> </form>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
