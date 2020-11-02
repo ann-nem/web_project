@@ -9,6 +9,7 @@ import Cart from "@/views/Cart";
 import Product from "@/views/Product";
 import SignIn from "@/views/SignIn";
 import Profile from "@/views/Profile";
+import Registration from "@/views/Registration";
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/registration',
+    name: 'Registration',
+    component: Registration
   }
 ]
 
