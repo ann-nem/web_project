@@ -174,7 +174,7 @@
 .info-product {
     margin-left: 80px;
     margin-top: -15px;
-    width: 1113px;
+    width: 1093px;
 }
 
 .nav-pills {
@@ -258,4 +258,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.card-hit {
+    height: 650px;
+}
+
+.hit-footer {
+    color: white;
+}
+
+.hit-footer:hover {
+    text-decoration: none;
+    color: dimgray;
+}
 
