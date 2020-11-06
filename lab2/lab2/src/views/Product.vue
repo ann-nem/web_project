@@ -1,11 +1,4 @@
 <template>
-<!--  <div class="container product">-->
-<!--    <h1>{{product.name}}</h1>-->
-<!--    <p>-->
-<!--      <img style="max-width: 400px" v-bind:src="product.image">-->
-<!--    </p>-->
-<!--    <p>URL: {{product.url}}</p>-->
-<!--  </div>-->
   <div class="col-9 container product">
     <div class="tab-content" id="v-pills-tabContent">
       <div class="card mb-3 product-card border border-secondary" style="max-width: 1300px">

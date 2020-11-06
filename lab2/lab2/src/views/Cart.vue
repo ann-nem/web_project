@@ -1,37 +1,24 @@
 <template>
 <div class="container cart-page profile-text">
-<h1>Товары</h1>
+<h1>Корзина</h1>
 <div class="cart-empty" v-if="cart.total === 0">
-  В корзине нет товаров.
+  К сожалению, в вашей корзине пока что нет товаров.
 </div>
-<div class="cart-table" v-if="cart.total > 0">
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th>Товар</th>
-      <th>Стоимость</th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr v-for="product in cart.products">
-      <td width="200">
-        <div class="form-group">
-          <img class="cart-image" v-bind:src="product.image">
+<div class="cart" v-if="cart.total > 0">
+  <div v-for="product in cart.products">
+    <div class="media cart-product">
+      <img class="cart-img" v-bind:src="product.image">
+      <div class="media-body text-cart">
+        <h5><router-link v-bind:to="{name: 'Product', params: {url: product.url}}" class="cart-name">
+          {{product.name}}
+        </router-link></h5>
+        {{product.price}} ₽
         </div>
-        {{product.name}}
-      </td>
-      <td>{{product.price}} ₽</td>
-      <td>
-        <button class="btn btn-danger btn-sm" v-on:click="remove(product)">Удалить</button>
-      </td>
-    </tr>
-    <tr>
-      <td><b>Итого:</b></td>
-      <td colspan="2"><b>{{cart.total}} ₽</b></td>
-    </tr>
-    </tbody>
-  </table>
+      <button class="btn btn-danger btn-sm del-cart" v-on:click="remove(product)">Удалить</button>
+    </div>
+  </div>
+  <hr>
+  <h5 class="cart-total">Итого: {{cart.total}} ₽</h5>
 </div>
 </div>
 </template>
@@ -48,7 +35,6 @@ export default {
   methods: {
     remove(item) {
       this.cart.remove(item)
-      // Send Ajax Request
     }
   }
 }

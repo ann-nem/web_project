@@ -33,7 +33,7 @@
     </main>
 
     <footer class="footer">
-      <hr>
+      <hr class="footer-line">
       <div class="container"> <span class="text-muted text-center">Наш номер телефона для заказа: 8-900-500-00-00</span> </div>
     </footer>
   </div>

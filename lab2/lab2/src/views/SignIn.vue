@@ -22,7 +22,7 @@
             <label class="form-check-label" for="exampleCheck1">Запомнить</label>
           </div>
           <button type="submit" class="btn btn-primary btn-in">Войти</button> </form>
-        <router-link class="nav-link text-center" v-bind:to="{name: 'Registration'}">Зарегестрироваться</router-link>
+        <router-link class="nav-link text-center reg-link" v-bind:to="{name: 'Registration'}">Зарегестрироваться</router-link>
       </div>
     </div>
   </div>

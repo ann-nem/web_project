@@ -1,3 +1,22 @@
+html { height: 100%; }
+
+body {
+    min-height:100%;
+    position:relative;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-line {
+    margin-top: -1px;
+}
+
 .btn {
     color: hotpink;
     border-color: hotpink;
@@ -113,7 +132,7 @@
 .btn-in {
     color: dimgray;
     background-color: #ffe8f4;
-    margin-left: 45%;
+    margin-left: 44%;
 }
 
 .btn-reg {
@@ -270,4 +289,50 @@
     text-decoration: none;
     color: dimgray;
 }
+
+.cart-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    color: white;
+}
+
+.cart-product {
+    border: none;
+    margin-left: -45px;
+    margin-bottom: 20px;
+}
+
+.text-cart, .del-cart {
+    margin-top: 30px;
+}
+
+.cart-total {
+    margin-left: 60%;
+}
+
+.cart-name {
+    text-decoration: none;
+    color:#343434;
+}
+.cart-name:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.cart-page {
+    margin-top: 20px;
+}
+
+.cart {
+    margin-top: -20px;
+}
+
+.reg-link:hover {
+    color: dimgray;
+}
+
 
