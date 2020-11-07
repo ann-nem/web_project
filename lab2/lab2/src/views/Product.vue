@@ -66,7 +66,6 @@ export default {
   methods: {
     addToCart() {
       CartData.add(this.product)
-      // Send Ajax Request
     }
   }
 }
