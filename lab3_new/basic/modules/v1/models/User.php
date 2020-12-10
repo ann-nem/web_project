@@ -1,35 +1,70 @@
 <?php
 
 namespace app\modules\v1\models;
-use yii\base\Model;
 
-class User extends Model {
+use Yii;
 
-    public function login() {
-        // do login
+/**
+ * This is the model class for table "user".
+ *
+ * @property int $id
+ * @property string $name Имя
+ * @property string $password Пароль
+ * @property string|null $email Электронная почта
+ * @property string|null $telephone Номер телефона
+ * @property string|null $dateBirth Дата рождения
+ * @property string|null $address Адрес
+ *
+ * @property Order[] $orders
+ */
+class User extends \yii\db\ActiveRecord
+{
+    /**
+     * {@inheritdoc}
+     */
+    public static function tableName()
+    {
+        return 'user';
     }
 
-    public function register() {
-        // do register
-    }
-
-    public function getUsers() {
+    /**
+     * {@inheritdoc}
+     */
+    public function rules()
+    {
         return [
-            [
-                'id' => 1,
-                'login' => "login1",
-                'password' => 'pass1',
-            ],
-            [
-                'id' => 2,
-                'login' => "login2",
-                'password' => 'pass2',
-            ],
-            [
-                'id' => 3,
-                'login' => "login3",
-                'password' => 'pass3'
-            ],
+            [['name', 'password'], 'required'],
+            [['dateBirth'], 'safe'],
+            [['name'], 'string', 'max' => 150],
+            [['password'], 'string', 'max' => 50],
+            [['email', 'telephone'], 'string', 'max' => 100],
+            [['address'], 'string', 'max' => 200],
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Имя',
+            'password' => 'Пароль',
+            'email' => 'Электронная почта',
+            'telephone' => 'Номер телефона',
+            'dateBirth' => 'Дата рождения',
+            'address' => 'Адрес',
+        ];
+    }
+
+    /**
+     * Gets query for [[Orders]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getOrders()
+    {
+        return $this->hasMany(Order::className(), ['idUser' => 'id']);
     }
 }
