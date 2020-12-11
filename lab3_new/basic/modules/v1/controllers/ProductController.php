@@ -11,7 +11,7 @@ class ProductController extends ApiController {
         return Product::find()->all();
     }
 
-    public function actionConcrete($id) {
+    public function actionId($id) {
         return Product::findOne(['id' => $id]);
     }
 

@@ -11,7 +11,7 @@ class CategoryController extends ApiController {
         return Category::find()->all();
     }
 
-    public function actionConcrete($id) {
+    public function actionId($id) {
         return Category::findOne(['id' => $id]);
     }
 

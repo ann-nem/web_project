@@ -11,7 +11,7 @@ class FillingController extends ApiController {
         return Filling::find()->all();
     }
 
-    public function actionConcrete($id) {
+    public function actionId($id) {
         return Filling::findOne(['id' => $id]);
     }
 
