@@ -25,6 +25,10 @@ class ProductController extends ApiController {
         return Product::findAll(['idFilling' => $idFilling]);
     }
 
+    public function actionHitproducts() {
+        return Product::findAll(['hitProduct' => 1]);
+    }
+
     public function actionCreate() {
         $product = new Product();
         $product->load(Yii::$app->request->getBodyParams(), '');
