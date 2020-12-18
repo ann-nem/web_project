@@ -4,9 +4,14 @@ namespace app\modules\v1\controllers;
 
 use app\modules\v1\models\User;
 use yii\rest\Controller;
+use Yii;
 
 class UserController extends ApiController {
-    public function actionLogin($username, $password) {
+    public function actionLogin() {
+
+        $username = Yii::$app->request->getBodyParam('username');
+        $password = Yii::$app->request->getBodyParam('password');
+
         $user = User::findOne(['name' => $username, 'password' => $password]);
 
         if ($user == null) {
@@ -28,10 +33,14 @@ class UserController extends ApiController {
             }
         }
 
-        return $user->accessToken;
+        return $user;
     }
 
-    public function actionRegister($username, $password) {
+    public function actionRegister() {
+
+        $username = Yii::$app->request->getBodyParam('username');
+        $password = Yii::$app->request->getBodyParam('password');
+
         $user = User::findOne(['name' => $username]);
 
         if ($user != null){
@@ -58,7 +67,7 @@ class UserController extends ApiController {
 
         $newUser->save();
 
-        return $newUser->accessToken;
+        return $newUser;
     }
 
     public function actionAll() {
