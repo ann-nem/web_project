@@ -36,4 +36,15 @@ class ProductController extends ApiController {
 
         return $product;
     }
+
+    public function actionInfo($url)
+    {
+        $product = Product::findOne()
+            //->with(['category', 'propertiesValues', 'propertiesValues.property'])
+            ->where(['url' => $url])
+            ->one();
+
+        return $product;
+    }
+
 }
