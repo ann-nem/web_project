@@ -7,8 +7,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Catalog'}">Каталог</router-link></li>
-          <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Actions'}">Акции</router-link> </li>
-          <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Delivery'}">Доставка и оплата</router-link> </li>
+<!--          <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Actions'}">Акции</router-link> </li>-->
+<!--          <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Delivery'}">Доставка и оплата</router-link> </li>-->
           <li class="nav-item"> <router-link class="nav-link" v-bind:to="{name: 'Contact'}">Контакты</router-link> </li>
         </ul>
         <div class="my-2 my-lg-0">

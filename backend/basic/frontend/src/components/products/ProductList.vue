@@ -63,11 +63,8 @@ export default {
     checkCategory(){
       var category;
       this.filter.categories.forEach(function(item, i) {
-        // console.log( i + ": " + item.name );
         var x = document.getElementById(item.name);
-        // console.log(x);
         if (x.checked) {
-          console.log('Выбран ' + item.name + '  ' + item.id);
           category = item.id;
         }
       });
@@ -78,9 +75,7 @@ export default {
 
       var filling;
       this.filter.fillings.forEach(function(item, i) {
-        // console.log( i + ": " + item.name );
         var x = document.getElementById(item.name);
-        // console.log(x);
         if (x.checked) {
           console.log('Выбран ' + item.name + '  ' + item.id);
           filling = item.id;

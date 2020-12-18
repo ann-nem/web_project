@@ -7,7 +7,9 @@
         продумано до мельчайших деталей, чтобы радовать наших клиентов каждый день.</p>
       <hr class="my-4">
       <p>Сделайте свой первый заказ наших фирменных десертов уже сейчас.</p>
-      <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Посмотреть</a></p>
+      <router-link v-bind:to="{name: 'Catalog'}" class="">
+        <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Посмотреть</a></p>
+      </router-link>
     </div>
     <h1 class="display-4 text-center">Хиты недели</h1>
     <div class="card-deck">
