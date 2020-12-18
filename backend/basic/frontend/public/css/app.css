@@ -338,7 +338,36 @@ body {
 .btn-category {
     background-color: white;
     color: dimgray;
-    border-color: dimgray;
+    border-color: #696969;
 }
+
+.btn-in {
+    margin-right: 20px;
+}
+
+.jumbotron-in {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding-bottom: 5px;
+}
+
+.btn-pr {
+    background-color: #efefef;
+    color: deeppink;
+}
+
+.btn-pr:hover {
+    background-color: dimgrey;
+    color:deeppink;
+}
+
+.btn-out {
+    margin-left: 95%;
+    background-color: dimgrey;
+    color:white;
+    border-color: dimgrey;
+}
+
 
 
