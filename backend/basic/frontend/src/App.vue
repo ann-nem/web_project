@@ -19,9 +19,6 @@
             <li class="nav-item my-2 mr-sm-2">
               <router-link class="nav-link" v-bind:to="{name: 'Profile'}">Профиль</router-link>
             </li>
-<!--            <li class="nav-item my-2 mr-sm-2" v-else>-->
-<!--              <router-link class="nav-link" v-bind:to="{name: 'SignIn'}">Войти</router-link>-->
-<!--            </li>-->
           </ul>
         </div>
       </div>

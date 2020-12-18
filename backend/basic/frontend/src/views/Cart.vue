@@ -7,7 +7,7 @@
 <div class="cart" v-if="cart.total > 0">
   <div v-for="product in cart.products">
     <div class="media cart-product">
-      <img class="cart-img" v-bind:src="product.image">
+      <img class="cart-img" v-bind:src="product.img">
       <div class="media-body text-cart">
         <h5><router-link v-bind:to="{name: 'Product', params: {url: product.url}}" class="cart-name">
           {{product.name}}

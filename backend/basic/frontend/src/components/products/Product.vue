@@ -8,7 +8,7 @@
         {{product.name}}
       </router-link>
     </h3>
-    <p>Стоимость: {{product.price}} &#8381</p>
+    <p>{{product.price}} &#8381</p>
     <p>
       <button class="btn btn-secondary btn-buy" v-on:click="addToCart">Купить</button>
     </p>
@@ -22,6 +22,7 @@ export default {
   props: ['product'],
   methods: {
     addToCart() {
+      console.log(this.product.id)
       CartData.add(this.product)
       // Send Ajax Request
     }

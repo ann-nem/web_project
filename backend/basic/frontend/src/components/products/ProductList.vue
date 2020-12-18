@@ -23,23 +23,7 @@
         </ul>
         <hr>
       </div>
-<!--      <div class="filter">-->
-<!--        <h5>Вес</h5>-->
-<!--        <div class="d-flex">-->
-<!--          <input type="number" class="form-control" placeholder="от">-->
-<!--          <input type="number" class="form-control" placeholder="до">-->
-<!--        </div>-->
-<!--        <hr>-->
-<!--      </div>-->
-<!--      <div class="filter">-->
-<!--        <h5>Стоимость</h5>-->
-<!--        <div class="d-flex">-->
-<!--          <input type="number" class="form-control" placeholder="от">-->
-<!--          <input type="number" class="form-control" placeholder="до">-->
-<!--        </div>-->
-<!--        <hr>-->
-<!--      </div>-->
-      <button class="btn btn-secondary btn-buy" v-on:click="checkCategory">Применить</button>
+      <button class="btn btn-secondary btn-category" v-on:click="checkCategory">Применить</button>
     </div>
     <div class="col-md-9">
       <div class="row">

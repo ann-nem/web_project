@@ -335,4 +335,10 @@ body {
     color: dimgray;
 }
 
+.btn-category {
+    background-color: white;
+    color: dimgray;
+    border-color: dimgray;
+}
+
 
