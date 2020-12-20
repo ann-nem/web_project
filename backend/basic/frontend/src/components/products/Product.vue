@@ -4,7 +4,7 @@
       <img class="img-fluid img-border" v-bind:src="product.img">
     </div>
     <h3>
-      <router-link v-bind:to="{name: 'Product', params: {id: product.id}}" class="catalog-title">
+      <router-link v-bind:to="{name: 'Product', params: {url: product.url}}" class="catalog-title">
         {{product.name}}
       </router-link>
     </h3>
@@ -22,9 +22,8 @@ export default {
   props: ['product'],
   methods: {
     addToCart() {
-      console.log(this.product.id)
+      //console.log(this.product.id)
       CartData.add(this.product)
-      // Send Ajax Request
     }
   }
 }

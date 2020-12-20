@@ -50,11 +50,11 @@ export default {
     }
   },
   created() {
-    const id = this.$route.params.id
+    const url = this.$route.params.url
 
-    this.$http.get('/product/id', {params: {id: id}})
+    this.$http.get('/product/url', {params: {url: url}})
         .then((response) => {console.log(response.data)
-                            this.product = response.data})
+          this.product = response.data})
   },
   methods: {
     addToCart() {

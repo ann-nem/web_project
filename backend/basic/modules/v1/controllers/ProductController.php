@@ -17,6 +17,10 @@ class ProductController extends ApiController {
         return Product::findOne(['id' => $id]);
     }
 
+    public function actionUrl($url) {
+        return Product::findOne(['url' => $url]);
+    }
+
     public function actionIdcategory($idCategory) {
         return Product::findAll(['idCategory' => $idCategory]);
     }
