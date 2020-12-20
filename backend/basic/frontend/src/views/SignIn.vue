@@ -48,8 +48,6 @@ export default {
         password: this.password,
       }
 
-      console.log("sd - " + submissionData.username);
-
       this.$http.post('/user/login', submissionData)
           .then((response) => {
             localStorage.setItem('userData', JSON.stringify(response.data))
@@ -62,27 +60,6 @@ export default {
             }
           })
           .catch((error) => alert(error.response.data.statusText))
-      // signIn(e) {
-      //   if (this.validate()) {
-      //     const result = {
-      //       name: 'Иван Иванов',
-      //       email: 'ivan@ya.ru',
-      //       accessToken: 'jsdlf732649823709!ew98r#$432'
-      //     }
-      //     User.login(result)
-      //   }
-      //   e.preventDefault()
-      // },
-      // validate() {
-      //   this.errors = {}
-      //   if (this.email.trim().length === 0) {
-      //     this.errors.email = 'Заполните Email.'
-      //   }
-      //   if (this.password.trim().length === 0) {
-      //     this.errors.password = 'Заполните Пароль.'
-      //   }
-      //   return Object.keys(this.errors).length === 0
-      // }
     }
   }
 }

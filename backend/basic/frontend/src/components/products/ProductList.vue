@@ -77,7 +77,6 @@ export default {
       this.filter.fillings.forEach(function(item, i) {
         var x = document.getElementById(item.name);
         if (x.checked) {
-          console.log('Выбран ' + item.name + '  ' + item.id);
           filling = item.id;
         }
       });
